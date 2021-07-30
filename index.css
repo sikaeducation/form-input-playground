@@ -1,0 +1,70 @@
+body {
+  font-family: Georgia, sans-serif;
+}
+
+input, label, select {
+  display: block;
+}
+
+section {
+  padding: 36px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+section > h2 {
+  grid-column: 1 / span 2;
+}
+
+section > label {
+  margin-right: 16px;
+  text-align: right;
+  color: hsl(0, 0%, 40%);
+}
+
+input, textarea, select {
+  margin-left: 16px;
+  margin-bottom: 24px;
+  padding: 16px;
+}
+
+textarea {
+  resize: none;
+  height: 6em;
+}
+
+[type=submit] {
+  background-color: hsl(120, 50%, 80%);
+  color: hsl(120, 50%, 20%);
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 1px 2px hsl(120, 20%, 10%);
+  cursor: pointer;
+  margin: 36px auto;
+  transition: background-color 0.2s;
+}
+[type=submit]:hover {
+  background-color: hsl(120, 50%, 85%);
+}
+
+#color-input {
+  padding: 0;
+}
+
+#radio-buttons > div, #checkboxes > div {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+}
+
+#multiselect select {
+  padding: 0;
+  height: 200px;
+}
+
+h1 {
+  padding-left: 36px;
+}
+h1 + p {
+  color: hsl(0, 0%, 20%);
+  padding-left: 36px;
+}

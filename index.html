@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Display a Pokemon</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <h1>Form Input Playground</h1>
+    <p>Check `index.css` for styling, `index.js` for form handling, and the console for output on submission.</p>
+    <form>
+      <section id="regular-input">
+        <h2>Regular Input</h2>
+        <label for="text-input">Text</label>
+        <input type="text" name="text-input" id="text-input" />
+
+        <label for="email-input">Email</label>
+        <input type="email" name="email-input" id="email-input" />
+
+        <label for="url-input">URL</label>
+        <input type="url" name="url-input" id="url-input" />
+
+        <label for="number-input">Number</label>
+        <input type="number" name="number-input" id="number-input" />
+
+        <label for="range-input">Range</label>
+        <input type="range" min="3" max="7" name="range-input" id="range-input" />
+
+        <label for="date-input">Date</label>
+        <input type="date" name="date-input" id="date-input" />
+
+        <label for="time-input">Time</label>
+        <input type="time" name="time-input" id="time-input" />
+
+        <label for="month-input">Month</label>
+        <input type="month" name="month-input" id="month-input" />
+
+        <label for="color-input">Color</label>
+        <input type="color" name="color-input" id="color-input" />
+
+        <label for="password-input">Password</label>
+        <input type="password" name="password-input" id="password-input" />
+
+        <label for="textarea-input">Textarea</label>
+        <textarea id="textarea-input" name="textarea-input"></textarea>
+      </section>
+
+      <section id="dropdowns">
+        <h2>Dropdowns</h2>
+        <label for="simple-dropdown">Simple Dropdown</label>
+        <select id="simple-dropdown" name="service-level">
+          <option disabled>Please select an option below</option>
+          <option value="standard">Standard</option>
+          <option value="twoday">2 day</option>
+          <option value="overnight">Overnight</option>
+        </select>
+
+        <label for="dropdown-with-groups">Dropdown with Option Groups</label>
+        <select id="dropdown-with-groups" name="service-level-with-groups">
+          <optgroup>
+            <option disabled>This is free</option>
+            <option value="standard" selected>Standard</option>
+          </optgroup>
+          <optgroup>
+            <option disabled>These cost extra</option>
+            <option value="twoday">2 day</option>
+            <option value="overnight">Overnight</option>
+          </optgroup>
+        </select>
+      </section>
+
+      <section id="radio-buttons">
+        <h2>Radio Buttons</h2>
+        <label>Radio buttons with 3 options</label>
+        <div>
+          <input type="radio" id="under-18" name="age" value="<18" />
+          <label for="under-18">Under 18</label>
+          <input type="radio" id="18-39" name="age" value="18-39" />
+          <label for="18-39">18-39</label>
+          <input type="radio" id="over-40" name="age" value=">40" />
+          <label for="over-40">Over 40</label>
+        </div>
+      </section>
+
+      <section id="multiselect">
+        <h2>Multiselect</h2>
+        <label for="toppings">Multiselect with 7 options</label>
+        <select id="toppings" name="toppings" multiple>
+          <option value="cheese" selected>Cheese</option>
+          <option value="pepperoni">Pepperoni</option>
+          <option value="black-olives">Black Olives</option>
+          <option value="sausage">Sausage</option>
+          <option value="green-peppers">Green Peppers</option>
+          <option value="mushrooms">Mushrooms</option>
+          <option value="anchovies">Anchovies</option>
+        </select>
+      </section>
+
+      <section id="checkboxes">
+        <h2>Checkboxes</h2>
+        <label>2 Checkboxes</label>
+        <div>
+          <input type="checkbox" name="terms-and-conditions" id="terms-and-conditions" />
+          <label for="terms-and-conditions">Do you accept the terms and conditions?</label>
+
+          <input type="checkbox" name="email-list" id="email-list" />
+          <label for="email-list">Would you like to join our email list?</label>
+        </div>
+      </section>
+
+      <input type="submit" value="Submit this form" />
+    </form>
+  </body>
+</html>
